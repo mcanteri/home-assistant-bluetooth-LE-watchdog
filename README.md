@@ -5,6 +5,7 @@ Usually when BLE discovery stop running is because the process doesn't end and r
 The script bluetoothLE-watchdog.sh is intended for who are running Home Assistant Supervised. 
 Tested configuration:
 
+<details><summary>Home Assistant Info</summary>
 version | core-2021.9.7
 installation_type | Home Assistant Supervised
 dev | false
@@ -16,6 +17,7 @@ python_version | 3.9.7
 os_name | Linux
 os_version | 5.10.63-v7+
 arch | armv7l
+</details>
 
 The script ble-watchdog-copy-and-run-in-container.sh is a partial work for injecting the watchdog into the container, for other kind of HA installation, but actually I don't know
 if with HASSIO is possible to have access to docker on command line, so don't use it! Suggestion and help are welcome to improve the workaround.
