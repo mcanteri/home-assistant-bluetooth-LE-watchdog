@@ -31,6 +31,7 @@ bluetoothLE-watchdog.sh &<br>
 You can have an idea of what is happening in the log file, under /tmp ;-)<br>
 
 My Hardware configuration is as follow:<br>
+<pre><code>
 hci1:   Type: Primary  Bus: UART<br>
         BD Address: B8:27:EB:79:B9:EA  ACL MTU: 1021:8  SCO MTU: 64:1<br>
         UP RUNNING INQUIRY<br>
@@ -42,6 +43,7 @@ hci0:   Type: Primary  Bus: USB<br>
         UP RUNNING<br>
         RX bytes:64374261 acl:0 sco:0 events:1946876 errors:0<br>
         TX bytes:46069 acl:0 sco:0 commands:5106 errors:0<br>
+</code></pre>
 <br>
 with two BT, the one integrated into RPi 3b+ and a USB dongle, both less than 5.1 bt version. The id 0 is configured for ble use and the id 1 for normal bt, as I use both modules in my config:<br>
 <br>
@@ -59,5 +61,7 @@ device_tracker:<br>
     consider_home: 240<br>
     new_device_defaults:<br>
       track_new_devices: false<br>
-<br></code></pre>
+</code></pre>
+<br>
+In this way the scan of normal BT will not occur on the same device of the ble version and it helps run the trackers a bit better.
 
