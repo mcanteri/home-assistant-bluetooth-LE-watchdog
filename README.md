@@ -30,6 +30,12 @@ bluetoothLE-watchdog.sh &<br>
 
 You can have an idea of what is happening in the log file, under /tmp ;-)<br>
 
+When it fits your need, it is better to run it at boot time, so for that purpose just do:<br>
+
+crontab -e<br>
+@reboot /the/path/of/bluetoothLE-watchdog.sh<br>
+
+
 My Hardware configuration is as follow:<br>
 <pre><code>
 hci1:   Type: Primary  Bus: UART<br>
