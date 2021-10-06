@@ -1,9 +1,9 @@
 echo Copying file to container ...
-docker cp ./bluetoothLE-watchdog.sh homeassistant:/usr/local/bin/
+docker cp ./bluetoothLE-watchdog.sh homeassistant:/usr/local/sbin/
 echo ... done.
-docker exec -d homeassistant chmod 755 /usr/local/bin/bluetoothLE-watchdog.sh
+docker exec -d homeassistant chmod 755 /usr/local/sbin/bluetoothLE-watchdog.sh
 echo Killing previous existing process ...
-docker exec -d homeassistant killall bluetoothLE-watchdog.sh
+docker exec -d homeassistant sh -c "ps -e | grep  bluetoothLE-watchdog.sh | grep -v grep | awk {'print $1'} | xargs kill"
 echo Starting the watchdog ...
-docker exec -d homeassistant /usr/local/bin/bluetoothLE-watchdog.sh
+docker exec -d homeassistant /usr/local/sbin/bluetoothLE-watchdog.sh
 echo ... done.
