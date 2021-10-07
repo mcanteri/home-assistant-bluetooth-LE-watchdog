@@ -20,8 +20,9 @@ while true; do
 			# The process is not running.
 			count=$(expr $count + 1)
 			echo $myDate BluetoothLE Watchdog: process not running, $count ... >> $ble_watchdog_log
-			if [[ $count -gt 10 ]]; then
+			if [[ $count -gt 30 ]]; then
 				echo $myDate BluetoothLE Watchdog: very likely the device need a reset or the system to reboot ... >> $ble_watchdog_log
+				hciconfig hci0 reset
 			fi
 				
 		else
@@ -43,6 +44,6 @@ while true; do
 	fi
 	
 	echo $myDate BluetoothLE Watchdog: sleeping ... >> $ble_watchdog_log
-	sleep 10
+	sleep 15
 
 done
