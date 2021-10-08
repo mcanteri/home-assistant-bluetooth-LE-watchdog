@@ -2,7 +2,10 @@
 A workaround about the buggy bluetooth LE implementation running on Home Assistant.
 Usually when BLE discovery stop running is because the process doesn't end and remain stuck, so the daemon try to resolve the issue.
 
-The script bluetoothLE-watchdog.sh is intended for who are running Home Assistant Supervised. 
+Pre requisites:
+
+- the script bluetoothLE-watchdog.sh is intended for who are running Home Assistant Supervised. 
+
 Tested configuration:
 
 <details><summary>Home Assistant currently tested</summary>
