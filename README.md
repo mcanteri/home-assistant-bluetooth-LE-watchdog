@@ -9,7 +9,6 @@ Pre requisites:
 Tested configuration:
 
 <details><summary>Home Assistant currently tested</summary>
-<<<<<<< HEAD
 version | core-2021.9.7 (and following versions till the latest)<br>
 installation_type | Home Assistant Supervised<br>
 dev | false<br>
