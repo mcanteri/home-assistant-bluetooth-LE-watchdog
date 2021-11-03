@@ -1,5 +1,6 @@
 # home-assistant-bluetooth-LE-watchdog
 A workaround about the buggy bluetooth LE implementation running on Home Assistant.
+With this watchdog, you can use both BL type combined with the ping presence to have a stable presence status of each person.
 Usually when BLE discovery stop running is because the process doesn't end and remain stuck, so the daemon try to resolve the issue.
 
 Pre requisites:
