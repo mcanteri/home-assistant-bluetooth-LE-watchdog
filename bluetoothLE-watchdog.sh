@@ -29,7 +29,7 @@ while true; do
 			# Process stuck
 			echo $myDate BluetoothLE Watchdog: fixing process $myprocess_num ... >> $ble_watchdog_log
 			kill -1 $myprocess_num
-			sleep 1
+			sleep 3
 			hciconfig hci0 reset
 		fi
 
