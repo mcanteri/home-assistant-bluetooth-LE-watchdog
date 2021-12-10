@@ -62,12 +62,12 @@ with two BT, the one integrated into RPi 3b+ and a USB dongle, both less than 5.
 device_tracker:<br>
   - platform: bluetooth_tracker<br>
     device_id: 1<br>
-    interval_seconds: 30<br>
+    interval_seconds: 60<br>
     consider_home: 240<br>
     new_device_defaults:<br>
       track_new_devices: false<br>
   - platform: bluetooth_le_tracker<br>
-    interval_seconds: 25<br>
+    interval_seconds: 60<br>
     consider_home: 240<br>
     new_device_defaults:<br>
       track_new_devices: false<br>

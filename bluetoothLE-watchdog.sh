@@ -55,6 +55,6 @@ while true; do
         fi
 
         echo "$myDate BluetoothLE Watchdog: sleeping ..." >> $ble_watchdog_log
-        sleep 15
+        sleep 20
 
 done
