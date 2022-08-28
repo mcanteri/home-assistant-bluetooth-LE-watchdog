@@ -1,4 +1,4 @@
-With the new bluetooth implementation, this watchdog is no more useful.
+Since Home Assistant 2022.08 version, this watchdog is no more useful.
 
 # home-assistant-bluetooth-LE-watchdog
 A workaround about the buggy bluetooth LE implementation running on Home Assistant.
