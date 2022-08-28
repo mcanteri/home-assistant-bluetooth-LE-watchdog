@@ -1,3 +1,5 @@
+With the new bluetooth implementation, this watchdog is no more useful.
+
 # home-assistant-bluetooth-LE-watchdog
 A workaround about the buggy bluetooth LE implementation running on Home Assistant.
 With this watchdog, you can use both BL type combined with the ping presence to have a stable presence status of each person.
